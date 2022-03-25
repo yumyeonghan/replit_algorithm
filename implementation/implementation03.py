@@ -8,7 +8,7 @@
 a1에 있을 때 이동할 수 있는 경우의 수는 2가지 입니다.
 c2에 있을 때 이동할 수 있는 경우의 수는 6가지 입니다.
 '''
-
+#풀이1
 col,row=map(str,input())
 row=int(row)
 
@@ -53,4 +53,22 @@ for i in range(2):
 
 count=count_col+count_row
 
+print(count)
+
+#풀이2
+
+#현재 위치 입력받기
+input_data=input()
+row=int(input_data[1])
+col=int(ord(input_data[0]))-int(ord('a'))+1 
+count=0
+#이동할 수 있는 8가지 방향 정의
+steps=[(2,1),(2,-1),(-2,1),(-2,-1),(1,2),(1,-2),(-1,2),(-1,-2)]
+
+#8가지 방향으로 이동 가능한지 확인
+for step in steps:
+  nrow=row+step[0]
+  ncol=col+step[1]
+  if nrow>0 and nrow<9 and ncol>0 and ncol<9:
+    count+=1
 print(count)
