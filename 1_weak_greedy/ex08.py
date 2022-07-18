@@ -18,3 +18,4 @@ for i in data:
         target+=i # 타깃+i 를 해주면 그 사이의 타깃들은 자연스레 성립 됨
 
 print(target)
+  

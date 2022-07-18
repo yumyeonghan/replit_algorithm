@@ -15,17 +15,20 @@ while(n>0):
         n=n-data[i]
         if n>0:
             count+=1
+        i+=1
+        continue
     #data[i+data[i]-1]는 현재 값과 같은 그룹으로 묶이는 마지막 값이다.
     if data[i]>1 and data[i]==data[i+data[i]-1]:
         n=n-data[i]
         if n>0:
             count+=1
-
+        i+=data[i+data[i]-1]
+        continue
     if data[i]>1 and data[i]<data[i+data[i]-1]:
         n=n-data[i+data[i]-1]
         if n>0:
             count+=1
-
-    i+=1
+        i+=data[i+data[i]-1]
+        continue
 
 print(count)

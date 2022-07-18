@@ -1,3 +1,5 @@
+#무지의 먹방 라이브(풀이 참조한 것) 
+
 import heapq
 
 def solution(food_times, k):
