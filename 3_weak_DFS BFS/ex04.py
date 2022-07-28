@@ -13,8 +13,8 @@ dy = [0, 0, -1, 1]
 result = 0
 
 # 깊이 우선 탐색(DFS)을 이용해 각 바이러스가 사방으로 퍼지도록 하기
-def virus(x, y) :
-  for i in range(4) :
+def virus(x, y):
+  for i in range(4):
     nx = x + dx[i]
     ny = y + dy[i]
     # 상, 하, 좌, 우 중에서 바이러스가 퍼질 수 있는 경우
