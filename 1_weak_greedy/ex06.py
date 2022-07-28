@@ -10,7 +10,7 @@ for i in n:
   i=int(i)
   
   #만약 값이 0이거나 1이면 이 값을 더해줌.
-  #지금까지 나온 결과가 0이면 다음 값과 더해준다. 
+  #지금까지 나온 결과가 0이면 다음 값과 더해줌. 
   if i==0 or i==1 or result==0 or result==1:
     result+=i
     print(result)

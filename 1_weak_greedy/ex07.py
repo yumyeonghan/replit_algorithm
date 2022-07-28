@@ -7,7 +7,7 @@ n=len(data)
 
 for i in range(1, n):
     if(data[i]!=data[i-1]): #두번째 원소부터 시작, 전 원소와 달라지면
-        if(data[i-1]=='0'): #조건에 따라 전원소의 값을 뒤집어줌
+        if(data[i-1]=='0'): #조건에 따라 전원소의 값을 뒤집어줌.
             convert_1+=1
         else:
             convert_0+=1

@@ -11,7 +11,7 @@ data.sort()
 
 for i in data:
     # 데이터들의 값은 항상 타깃보다 작거나 같아야함
-    # 그렇지 않으면 타깃이 성립하지 않음
+    # 그렇지 않으면 타깃이 성립하지 않음.
     if target<i:
         break
     else:

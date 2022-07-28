@@ -13,7 +13,7 @@ data.sort(reverse=True) # 내림차순 정렬
 print(data)
 
 while m!=0: 
-    for i in range(k): # 중복 가능 횟수까지 가장 큰 값 더함
+    for i in range(k): # 중복 가능 횟수까지 가장 큰 값 더함.
         result+=data[0]
         m-=1 
         if(m==0):

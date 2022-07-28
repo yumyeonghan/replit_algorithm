@@ -28,7 +28,7 @@ def solution(food_times, k):
             idx = k % length
             # 현재 리스트가 섭취시간으로 정렬되어 있어서 두번째 값인 순번으로 정렬해준다.
             hq.sort(key = lambda x: x[1])
-            # 답을 찾아주고 멈춰준다
+            # 답을 찾아주고 멈춰준다.
             answer = hq[idx][1]
             break
     return answer

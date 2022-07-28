@@ -11,7 +11,7 @@ count=0
 
 while(n>0):
 
-    if data[i]==1: #첫번째 값이 1이면 n에서 바로 빼기
+    if data[i]==1: #첫번째 값이 1이면 n에서 바로 빼기.
         n=n-data[i]
         if n>0:
             count+=1

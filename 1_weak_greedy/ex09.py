@@ -1,6 +1,6 @@
 # 볼링공 고르기
 
-n, m= map(int, input().split())
+n, m= map(int, input("입력").split())
 
 data=list(map(int, input().split()))
 
